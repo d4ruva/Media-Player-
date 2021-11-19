@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .container{
+            width: 100%;
+            min-height: 50px;
+            background-color: red;
+            align-self: center;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player using jQuery And Django</title>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        console.log("Hello Form jQuery")
+        $.ajax({
+            url: 'http://localhost:8000',
+            dataType: 'text',
+            success: function (result, status, xhr) {
+                
+            }
+        })
+    })
+</script>
+</html>
