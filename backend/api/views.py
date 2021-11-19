@@ -6,14 +6,13 @@ from firebase import firebase
 
 firebase = firebase.FirebaseApplication("https://media-player-8422a-default-rtdb.firebaseio.com/", None)
 
-data = {
-    'Name': "test",
-}
-
-result = firebase.post('media-player-8422a-default-rtdb', data)
-print(result)
+# result = firebase.post('media-player-8422a-default-rtdb', data)
+# print(result)
 
 # Create your views here.
 def index(request):
     return HttpResponse("Hello World")
 
+def upload(request):
+    
+    return HttpResponse("done.")
